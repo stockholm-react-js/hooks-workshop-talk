@@ -1,4 +1,6 @@
 import highlight from '@mdx-deck/themes/syntax-highlighter-prism';
+import { Split } from 'mdx-deck/layouts';
+
 
 import theme from './theme';
 
@@ -11,20 +13,64 @@ export const themes = [
 
 ---
 
+# Data fetching
+
+import CommentsWithData from './components/CommentsWithData.jsx'
+
+<CommentsWithData />
+
+---
+
+# Data fetching (component code)
+
+<code
+  language="jsx"
+  code={require('!raw-loader!./components/CommentsWithData.jsx').default}
+/>
+
+---
+
+# Data fetching (hook code)
+
+<code
+  language="jsx"
+  code={require('!raw-loader!./hooks/comments-data.js').default}
+/>
+
+---
+
+# Paginated components
+
+import Pagination from './components/Pagination.jsx'
+
+<Pagination />
+
+<code
+  language="jsx"
+  code={require('!raw-loader!./components/Pagination.jsx').default}
+/>
+
+---
+
+# usePagination hook
+
+<code
+  language="js"
+  code={require('!raw-loader!./hooks/pagination.js').default}
+/>
+
+---
+
 # Number input
 
 import NumberInput from './components/NumberInput'
 
 <NumberInput />
 
-```jsx
-function NumberInput({ value, onChange, ...props) {
-  const numberInputProps = useNumberFormatter(value, onChange);
-  return (
-    <Input {...props} {...numerInputProps} />
-  );
-}
-```
+<code
+  language="jsx"
+  code={require('!raw-loader!./components/NumberInput.jsx').default}
+/>
 
 ---
 
@@ -32,16 +78,3 @@ function NumberInput({ value, onChange, ...props) {
   language="jsx"
   code={require('!raw-loader!./hooks/number-formatter.js').default}
 />
-
----
-
-# Paginated components
-
-```jsx
-function NumberInput({ value, onChange, ...props) {
-  const numberInputProps = useNumberFormatter(value, onChange);
-  return (
-    <Input {...props} {...numerInputProps} />
-  );
-}
-```
