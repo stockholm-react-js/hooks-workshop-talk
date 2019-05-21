@@ -1,0 +1,21 @@
+{
+  "name": "hooks-workshop",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dock.mdx",
+  "dependencies": {
+    "@emotion/styled": "^10.0.11",
+    "mdx-deck": "^2.3.2"
+  },
+  "devDependencies": {
+    "mdx-deck-live-code": "^1.0.1",
+    "raw-loader": "^2.0.0",
+    "react-syntax-highlighter": "^10.2.1"
+  },
+  "scripts": {
+    "start": "mdx-deck -p 8083 deck.mdx",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
