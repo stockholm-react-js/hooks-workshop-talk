@@ -1,0 +1,47 @@
+import highlight from '@mdx-deck/themes/syntax-highlighter-prism';
+
+import theme from './theme';
+
+export const themes = [
+  theme,
+  highlight
+]
+
+# I need a hook
+
+---
+
+# Number input
+
+import NumberInput from './components/NumberInput'
+
+<NumberInput />
+
+```jsx
+function NumberInput({ value, onChange, ...props) {
+  const numberInputProps = useNumberFormatter(value, onChange);
+  return (
+    <Input {...props} {...numerInputProps} />
+  );
+}
+```
+
+---
+
+<code
+  language="jsx"
+  code={require('!raw-loader!./hooks/number-formatter.js').default}
+/>
+
+---
+
+# Paginated components
+
+```jsx
+function NumberInput({ value, onChange, ...props) {
+  const numberInputProps = useNumberFormatter(value, onChange);
+  return (
+    <Input {...props} {...numerInputProps} />
+  );
+}
+```
