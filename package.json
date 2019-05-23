@@ -13,6 +13,9 @@
   },
   "scripts": {
     "start": "mdx-deck -p 8083 deck.mdx",
+    "build": "mdx-deck build deck.mdx",
+	"predeploy": "npm run build",
+	"deploy": "gh-pages -d dist",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
