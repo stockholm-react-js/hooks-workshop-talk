@@ -1,5 +1,5 @@
 import highlight from '@mdx-deck/themes/syntax-highlighter-prism';
-import { Split } from 'mdx-deck/layouts';
+import { FullScreenCode, Split } from 'mdx-deck/layouts';
 
 import theme from './theme';
 
@@ -16,27 +16,61 @@ export const themes = [
 
 # Data fetching
 
+import CommentsWithDataNaive from './components/CommentsWithDataNaive.jsx'
+
+<CommentsWithDataNaive />
+
+---
+
+# Data fetching (component)
+
+<code
+  language="jsx"
+  code={require('!raw-loader!./components/CommentsWithDataNaive.jsx').default}
+/>
+
+---
+
+# Data fetching (hook)
+
+<code
+  language="jsx"
+  code={require('!raw-loader!./hooks/comments-data-naive.js').default}
+/>
+
+---
+
+# Data fetching (fixed)
+
 import CommentsWithData from './components/CommentsWithData.jsx'
 
 <CommentsWithData />
 
 ---
 
-# Data fetching (component code)
-
-<code
-  language="jsx"
-  code={require('!raw-loader!./components/CommentsWithData.jsx').default}
-/>
-
----
-
-# Data fetching (hook code)
+# Data fetching (fixed hook)
 
 <code
   language="jsx"
   code={require('!raw-loader!./hooks/comments-data.js').default}
 />
+
+---
+
+# Data fetching (class based)
+
+import ClassBasedCommentsWithData from './components/ClassBasedCommentsWithData.jsx'
+
+<ClassBasedCommentsWithData />
+
+---
+
+<FullScreenCode>
+  <code
+    language="jsx"
+    code={require('!raw-loader!./components/ClassBasedCommentsWithData.jsx').default}
+  />
+</FullScreenCode>
 
 ---
 
@@ -88,7 +122,9 @@ import NumberInput from './components/NumberInput'
 
 ---
 
-<code
-  language="jsx"
-  code={require('!raw-loader!./hooks/number-formatter.js').default}
-/>
+<FullScreenCode>
+  <code
+    language="jsx"
+    code={require('!raw-loader!./hooks/number-formatter.js').default}
+  />
+</FullScreenCode>
