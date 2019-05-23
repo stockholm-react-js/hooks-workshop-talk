@@ -7,15 +7,15 @@ function useCommentsData(page) {
   const [isFetching, setIsFetching] = useState(false);
 
   useEffect(() => {
-    let isCancelled = false;
+    // let isCancelled = false;
     setIsFetching(true);
     api.fetchComments(page).then(data => {
-      if (!isCancelled) {
+      // if (!isCancelled) {
         setComments(data);
         setIsFetching(false);
-      }
+      // }
     });
-    return () => { isCancelled = true };
+    // return () => { isCancelled = true };
   }, [page]);
 
   return { comments, isFetching };

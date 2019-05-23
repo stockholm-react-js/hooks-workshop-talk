@@ -8,7 +8,6 @@
     "mdx-deck": "^2.3.2"
   },
   "devDependencies": {
-    "mdx-deck-live-code": "^1.0.1",
     "raw-loader": "^2.0.0",
     "react-syntax-highlighter": "^10.2.1"
   },

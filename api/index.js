@@ -4,4 +4,3 @@ export const fetchComments = (page) => {
     {id: 2, text: `comment ${(page - 1) * 2 + 2}`},
   ]), page * 1000));
 }
-

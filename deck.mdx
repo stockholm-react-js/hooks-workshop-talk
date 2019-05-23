@@ -1,7 +1,6 @@
 import highlight from '@mdx-deck/themes/syntax-highlighter-prism';
 import { Split } from 'mdx-deck/layouts';
 
-
 import theme from './theme';
 
 export const themes = [
@@ -9,7 +8,9 @@ export const themes = [
   highlight
 ]
 
-# I need a hook
+# useReactSTHLM
+
+## Workshop about React Hooks
 
 ---
 
@@ -57,6 +58,19 @@ import Pagination from './components/Pagination.jsx'
 <code
   language="js"
   code={require('!raw-loader!./hooks/pagination.js').default}
+/>
+
+---
+
+# SomeContext
+
+import SomeContextThing from './components/SomeContext.jsx'
+
+<SomeContextThing />
+
+<code
+  language="jsx"
+  code={require('!raw-loader!./components/SomeContext.jsx').default}
 />
 
 ---
