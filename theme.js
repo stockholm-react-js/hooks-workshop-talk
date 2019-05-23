@@ -1,5 +1,9 @@
 import { dark } from 'mdx-deck/themes'
 import highlight from 'react-syntax-highlighter/dist/styles/prism/pojoaque';
+// import highlight from 'react-syntax-highlighter/dist/styles/prism/okaidia';
+// import highlight from 'react-syntax-highlighter/dist/styles/prism/duotone-space';
+// import highlight from 'react-syntax-highlighter/dist/styles/prism/darcula';
+// import highlight from 'react-syntax-highlighter/dist/styles/prism/atom-dark';
 
 export default {
   ...dark,
