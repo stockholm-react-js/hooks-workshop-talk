@@ -5,7 +5,7 @@
   "main": "dock.mdx",
   "dependencies": {
     "@emotion/styled": "^10.0.11",
-    "mdx-deck": "^2.3.2"
+    "mdx-deck": "^4.1.1"
   },
   "devDependencies": {
     "raw-loader": "^2.0.0",
